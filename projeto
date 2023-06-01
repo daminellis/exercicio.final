@@ -1,1 +1,3 @@
-
+#Jogo da Adivinhação: Crie um jogo simples em que o computador escolhe um número 
+#aleatório e o jogador tenta adivinhar qual é. O jogo fornece dicas ao jogador, informando 
+#se o número é maior ou menor.
