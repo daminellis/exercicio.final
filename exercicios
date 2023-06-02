@@ -86,3 +86,21 @@ elif calculo >= 4 and calculo <= 6:
     
 if calculo < 4:
     print('Reprovado')
+exercicio4
+def verificar_soma(a, b, limite):
+    soma = a + b
+    if soma > limite:
+        return True
+    else:
+        return False
+
+# Exemplo de uso da função
+a = int(input('digite um numero :'))
+b = int(input('digite um segundo numero :'))
+limite = int(input('digite um limite :'))
+
+if verificar_soma(a, b, limite):
+    print("A soma de", a, "e", b, "é maior do que", limite)
+else:
+    print("A soma de", a, "e", b, "não é maior do que", limite)
+
