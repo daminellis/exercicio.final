@@ -46,3 +46,43 @@ if verificar_presenca_numero(numeros, numero_verificar):
     print(numero_verificar, "está presente na lista.")
 else:
     print(numero_verificar, "não está presente na lista.")
+
+
+
+exercicio 1
+
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+nota3 = float(input('Digite a terceira nota: '))
+
+def calculo_media(nota1,nota2,nota3):
+    media = (nota1 + nota2 + nota3) / 3
+    
+    return media 
+
+calculo = calculo_media(nota1, nota2, nota3)
+print(calculo)
+
+
+exercicio 2
+
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
+nota3 = float(input('Digite a terceira nota: '))
+
+def calculo_media(nota1,nota2,nota3):
+    media = (nota1 + nota2 + nota3) / 3
+    
+    return media 
+
+calculo = calculo_media(nota1, nota2, nota3)
+print(calculo)
+
+if calculo > 6:
+    print('Aprovado')
+    
+elif calculo >= 4 and calculo <= 6:
+    print('Verificação suplementar')
+    
+if calculo < 4:
+    print('Reprovado')
