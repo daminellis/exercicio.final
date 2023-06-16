@@ -26,31 +26,28 @@ while votos < quant:
         satcensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
         satcinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
         satctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
+        satcensino = satcensino / satc
+        satcinfra = satcinfra / satc
+        satctec = satctec / satc
     
     elif escola == 2:
         unesc = unesc + 1
         unescensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
         unescinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
         unesctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
+        unescensino = unescensino / unesc
+        unescinfra = unescinfra / unesc
+        unesctec = unesctec / unesc
     
     elif escola == 3:
         cedup = cedup + 1
         cedupensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
         cedupinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
         ceduptec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
+        cedupensino = cedupensino / cedup
+        cedupinfra = cedupinfra / cedup
+        ceduptec = ceduptec / cedup
     
-satcensino = satcensino / satc
-satcinfra = satcinfra / satc
-satctec = satctec / satc
-
-unescensino = unescensino / unesc
-unescinfra = unescinfra / unesc
-unesctec = unesctec / unesc
-
-cedupensino = cedupensino / cedup
-cedupinfra = cedupinfra / cedup
-ceduptec = ceduptec / cedup
-
 print('Nota média SATC: \nNota ensino:',satcensino,'\nNota infraestrutura:',satcinfra,'Nota tecnología:',satctec)
-print('Nota média Unesc: \nNota ensino:',unescensino,'\nNota infraestrutura:',unescinfra,'Nota tecnología:',unesctec)
-print('Nota média Cedup: \nNota ensino:',cedupensino,'\nNota infraestrutura:',cedupinfra,'Nota tecnología:',ceduptec)
+print('\nNota média Unesc: \nNota ensino:',unescensino,'\nNota infraestrutura:',unescinfra,'Nota tecnología:',unesctec)
+print('\nNota média Cedup: \nNota ensino:',cedupensino,'\nNota infraestrutura:',cedupinfra,'Nota tecnología:',ceduptec)
