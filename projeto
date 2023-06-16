@@ -19,12 +19,12 @@ if escolanome == 'SATC':
     satcinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
     satctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
     
-if escolanome == 'UNESC':
+elif escolanome == 'UNESC':
     unescensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
     unescinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
     unesctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
     
-if escolanome == 'CEDUP':
+elif escolanome == 'CEDUP':
     cedupensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
     cedupinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
     ceduptec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
