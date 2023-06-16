@@ -48,6 +48,6 @@ while votos < quant:
         cedupinfra = cedupinfra / cedup
         ceduptec = ceduptec / cedup
     
-print('Nota média SATC: \nNota ensino:',satcensino,'\nNota infraestrutura:',satcinfra,'Nota tecnología:',satctec)
-print('\nNota média Unesc: \nNota ensino:',unescensino,'\nNota infraestrutura:',unescinfra,'Nota tecnología:',unesctec)
-print('\nNota média Cedup: \nNota ensino:',cedupensino,'\nNota infraestrutura:',cedupinfra,'Nota tecnología:',ceduptec)
+print('Nota média SATC: \nNota ensino:',satcensino,'\nNota infraestrutura:',satcinfra,'\nNota tecnología:',satctec)
+print('\nNota média Unesc: \nNota ensino:',unescensino,'\nNota infraestrutura:',unescinfra,'\nNota tecnología:',unesctec)
+print('\nNota média Cedup: \nNota ensino:',cedupensino,'\nNota infraestrutura:',cedupinfra,'\nNota tecnología:',ceduptec)
