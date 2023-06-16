@@ -1,32 +1,54 @@
+satc = ()
 satcensino = ()
 satcinfra = ()
 satctec = ()
 
+unesc = ()
 unescensino = ()
 unescinfra = ()
 unesctec = ()
 
+cedup =()
 cedupensino = ()
 cedupinfra = ()
 ceduptec = ()
 
-nome = input('Digite seu nome: ')
-escola = input('Digite o nome da sua escola: ')
-escolanome = escola.upper
+quant = int(input('Quantas pessoas utilizarão: '))
 
-if escolanome == 'SATC':
-    satcensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
-    satcinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
-    satctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
-    
-elif escolanome == 'UNESC':
-    unescensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
-    unescinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
-    unesctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
-    
-elif escolanome == 'CEDUP':
-    cedupensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
-    cedupinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
-    ceduptec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
-    
+for i in range(quant):
+    escola = input('Digite o nome da sua escola: ')
+    escolanome = escola.upper
 
+    if escolanome == 'SATC':
+        satc = satc + 1
+        satcensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
+        satcinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
+        satctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
+    
+    elif escolanome == 'UNESC':
+        unesc = unesc + 1
+        unescensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
+        unescinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
+        unesctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
+    
+    elif escolanome == 'CEDUP':
+        cedup = cedup + 1
+        cedupensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
+        cedupinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
+        ceduptec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
+    
+satcensino = satcensino / satc
+satcinfra = satcinfra / satc
+satctec = satctec / satc
+
+unescensino = unescensino / unesc
+unescinfra = unescinfra / unesc
+unesctec = unesctec / unesc
+
+cedupensino = cedupensino / cedup
+cedupinfra = cedupinfra / cedup
+ceduptec = ceduptec / cedup
+
+print('Nota média SATC: \nNota ensino:',satcensino,'\nNota infraestrutura:',satcinfra,'Nota tecnología:',satctec)
+print('Nota média Unesc: \nNota ensino:',unescensino,'\nNota infraestrutura:',unescinfra,'Nota tecnología:',unesctec)
+print('Nota média Cedup: \nNota ensino:',cedupensino,'\nNota infraestrutura:',cedupinfra,'Nota tecnología:',ceduptec)
