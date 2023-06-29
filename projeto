@@ -2,18 +2,36 @@ votos = 0
 
 satc = 0
 satcensino = 0
+sensinolista = []
+sensinonota = 0
 satcinfra = 0
+sinfralista = []
+sinfranota = 0
 satctec = 0
+steclista = []
+stecnota = 0
 
 unesc = 0
 unescensino = 0
+uensinolista = []
+uensinonota = 0
 unescinfra = 0
+uinfralista = []
+uinfranota = 0
 unesctec = 0
+uteclista = []
+utecnota = 0
 
 cedup = 0
 cedupensino = 0
+censinolista = []
+censinonota = 0
 cedupinfra = 0
+cinfralista = []
+cinfranota = 0
 ceduptec = 0
+cteclista = []
+ctecnota = 0
 
 quant = int(input('Quantas pessoas utilizarão: '))
 
@@ -24,28 +42,56 @@ while votos < quant:
     if escola == 1:
         satc = satc + 1
         satcensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
+        sensinolista.append(satcensino)
         satcinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
+        sinfralista.append(satcinfra)
         satctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
-        satcensino = satcensino / satc
-        satcinfra = satcinfra / satc
-        satctec = satctec / satc
-    
+        steclista.append(satctec)
+        
+        satcensino = sum(sensinolista)
+        sensinonota = satcensino / satc
+        satcinfra = sum(sinfralista)
+        sinfranota = satcinfra / satc
+        satctec = sum(steclista)
+        stecnota = satctec / satc
+        
     elif escola == 2:
         unesc = unesc + 1
         unescensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
+        uensinolista.append(unescensino)
         unescinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
+        uinfralista.append(unescinfra)
         unesctec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
-        unescensino = unescensino / unesc
-        unescinfra = unescinfra / unesc
-        unesctec = unesctec / unesc
+        uteclista.append(unesctec)
+        
+        unescensino = sum(uensinolista)
+        uensinonota = unescensino / unesc
+        unescinfra = sum(uinfralista)
+        uinfranota = unescinfra / unesc
+        unesctec = sum(uteclista)
+        utecnota = unesctec / unesc
     
     elif escola == 3:
         cedup = cedup + 1
         cedupensino = int(input('De 0 a 10, qual nota você daria para a qualidade de ensino da sua escola? '))
+        censinolista.append(cedupensino)
+        cedupensino = cedupensino + cedupensino
         cedupinfra = int(input('De 0 a 10, qual nota você daria para a qualidade de infraestrutura da sua escola? '))
+        cinfralista.append(cedupinfra)
+        cedupinfra = cedupinfra + cedupinfra
         ceduptec = int(input('De 0 a 10, qual nota você daria para a qualidade da tecnologia da sua escola? '))
-        cedupensino = cedupensino / cedup
-        cedupinfra = cedupinfra / cedup
+        cteclista.append(ceduptec)
+        
+        cedupensino = sum(censinolista)
+        censinonota = cedupensino / cedup
+        cedupinfra = sum(cinfralista)
+        cinfranota = cedupinfra / cedup
+        ceduptec = sum(cteclista)
+        ctecnota = ceduptec / cedup
+    
+print('Nota média SATC: \nNota ensino:',sensinonota,'/ Votos:',sensinolista,'\nNota infraestrutura:',sinfranota,'/ Votos:',sinfralista,'\nNota tecnología:',stecnota,'/ Votos:',steclista)
+print('\nNota média Unesc: \nNota ensino:',uensinonota,'/ Votos:',uensinolista,'\nNota infraestrutura:',uinfranota,'/ Votos:',uinfralista,'\nNota tecnología:',utecnota,'/ Votos:',uteclista)
+print('\nNota média Cedup: \nNota ensino:',censinonota,'/ Votos:',censinolista,'\nNota infraestrutura:',cinfranota,'/ Votos:',cinfralista,'\nNota tecnología:',ctecnota,'/ Votos:',cteclista)
         ceduptec = ceduptec / cedup
     
 print('Nota média SATC: \nNota ensino:',satcensino,'\nNota infraestrutura:',satcinfra,'\nNota tecnología:',satctec)
