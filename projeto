@@ -89,11 +89,6 @@ while votos < quant:
         ceduptec = sum(cteclista)
         ctecnota = ceduptec / cedup
     
-print('Nota média SATC: \nNota ensino:',sensinonota,'/ Votos:',sensinolista,'\nNota infraestrutura:',sinfranota,'/ Votos:',sinfralista,'\nNota tecnología:',stecnota,'/ Votos:',steclista)
+print('\nNota média SATC: \nNota ensino:',sensinonota,'/ Votos:',sensinolista,'\nNota infraestrutura:',sinfranota,'/ Votos:',sinfralista,'\nNota tecnología:',stecnota,'/ Votos:',steclista)
 print('\nNota média Unesc: \nNota ensino:',uensinonota,'/ Votos:',uensinolista,'\nNota infraestrutura:',uinfranota,'/ Votos:',uinfralista,'\nNota tecnología:',utecnota,'/ Votos:',uteclista)
 print('\nNota média Cedup: \nNota ensino:',censinonota,'/ Votos:',censinolista,'\nNota infraestrutura:',cinfranota,'/ Votos:',cinfralista,'\nNota tecnología:',ctecnota,'/ Votos:',cteclista)
-        ceduptec = ceduptec / cedup
-    
-print('Nota média SATC: \nNota ensino:',satcensino,'\nNota infraestrutura:',satcinfra,'\nNota tecnología:',satctec)
-print('\nNota média Unesc: \nNota ensino:',unescensino,'\nNota infraestrutura:',unescinfra,'\nNota tecnología:',unesctec)
-print('\nNota média Cedup: \nNota ensino:',cedupensino,'\nNota infraestrutura:',cedupinfra,'\nNota tecnología:',ceduptec)
